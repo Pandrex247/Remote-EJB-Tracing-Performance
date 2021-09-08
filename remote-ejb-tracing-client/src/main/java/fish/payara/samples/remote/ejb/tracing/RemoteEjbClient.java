@@ -84,10 +84,6 @@ public class RemoteEjbClient {
 
             span.setBaggageItem("Bibbles", "Bobbles");
             logger.log(Level.INFO, ejb.shouldNotBeTraced());
-
-            logger.log(Level.INFO, ejb.editBaggageItems());
-
-            logger.log(Level.INFO, ejb.annotatedMethod());
         } finally {
             if (span != null) {
                 span.finish();
