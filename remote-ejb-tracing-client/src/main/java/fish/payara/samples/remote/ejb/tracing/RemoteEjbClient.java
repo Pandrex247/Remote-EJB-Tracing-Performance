@@ -42,7 +42,6 @@ package fish.payara.samples.remote.ejb.tracing;
 import io.opentracing.Span;
 import io.opentracing.Tracer;
 import io.opentracing.util.GlobalTracer;
-import org.apache.jmeter.samplers.SampleResult;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;

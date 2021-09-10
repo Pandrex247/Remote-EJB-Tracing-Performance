@@ -10,9 +10,9 @@ import javax.ws.rs.Path;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-@Path("/application")
+@Path("/injected/application")
 @ApplicationScoped
-public class ApplicationScopedEjbEndpoint {
+public class ApplicationScopedInjectedEjbEndpoint {
 
     @EJB
     private EjbRemote ejb;
@@ -20,10 +20,10 @@ public class ApplicationScopedEjbEndpoint {
     @Inject
     private Tracer tracer;
 
-    private static final Logger logger = Logger.getLogger(ApplicationScopedEjbEndpoint.class.getName());
+    private static final Logger logger = Logger.getLogger(ApplicationScopedInjectedEjbEndpoint.class.getName());
 
     @GET
-    @Path("/invokeAll")
+    @Path("/")
     public String invokeAll() {
         String returnString = "";
 
