@@ -50,7 +50,7 @@
     <name>Payara Performance Tests - Remote EJB Tracing</name>
 
     <properties>
-        <payara.version>5.31.0-SNAPSHOT</payara.version>
+        <payara.version>5.32.0-SNAPSHOT</payara.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
